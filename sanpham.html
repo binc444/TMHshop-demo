@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMH shop</title>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/fc22b2cb3d.js" crossorigin="anonymous"></script>
+    <!-- Nhúng font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link to css -->
+    <link rel="stylesheet" href="assets/css/main.css">  
+    <link rel='stylesheet' href='assets/css/sanpham.css'>
+    <!-- plugin facebook -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0" nonce="lR3eEom6"></script>
+
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="navbar-header-top">
+                <ul class="nav-link">
+                    <li><a href="gioiThieu.html">Về chúng tôi</a></li>
+                    <li><a href="lienHe.html">Liên hệ</a></li>
+                </ul>              
+
+                <ul class="nav-link">
+                    <a href="#"><i class="fa-solid fa-bell"></i>
+                        <li>Thông báo</li>
+                    </a>
+
+                    <a href="hoTro.html"><i class="fa-solid fa-question"></i>
+                        <li>Hỗ trợ</li>
+                    </a>
+                    
+                    <a href="dangky.html"><i class="fa-solid fa-user"></i>
+                        <li>Đăng ký</li>
+                    </a>
+
+                    <a href="dangNhap.html"><i>|</i>
+                        <li>Đăng nhập</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="navbar-header-sub">
+                <div class="logo-site">
+                    <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>            
+                </div>
+
+                <div class="search-form-site">
+                    <div class="search-form">
+                        <form action="">
+                            <input type="text" placeholder="Nhập từ khóa tìm kiếm" class="input-search">
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form> 
+                    </div>
+
+                    <ul class="nav-link nav-flow">
+                        <a href="index.html"><li>Trang chủ</li></a>
+                        <a href="gioiThieu.html"><li>Giới thiệu</li></a>
+                        <a href="blog.html"><li>Blog</li></a>
+                        <a href="show-more.html">
+                            <li>Thời trang nam</li>
+                            <li>Thời trang nữ</li>
+                            <li>Sắc đẹp</li>
+                        </a>
+                        <a href="lienHe.html"><li>Liên hệ</li>  </a>
+                    </ul>
+                </div>
+
+                <div class="cart-size">
+                   <a href="gioHang.html"><i class="fa-solid fa-cart-plus" style="color: #FFFFFF;"></i></a>                 
+                </div>
+            </div>
+        </div>
+
+        <div id="container-box">    
+            <div class="details-product">
+                <!-- Phần ảnh và tên sản phẩm -->
+                <div class="product-content">
+                    <!-- ảnh -->
+                    <div class="product-img">
+                        <img id="productImage" src="" alt="Product Image">
+                
+                        <div class="product-interact">
+                            <div class="product-share-btn">
+                                Chia sẻ:
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-pinterest"></i>
+                                <i class="fa-brands fa-x-twitter"></i> 
+                            </div>
+                
+                            <div class="product-like-btn">
+                                <i class="fa-regular fa-heart" style="color: #f90101;"></i>
+                                Đã thích(0)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tên sản phẩm -->
+                    <div class="product-title-content">
+                        <h3 class="title-product">Xương Gặm Bàn Chải Cho Chó Làm Sạch Răng Bổ Sung Canxi</h3>
+
+                        <div class="rate">
+                            <div class="list-star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>  
+                            </div>
+
+                            <div class="result-rating">Đánh giá <span class="result-rating">(4.7/5)</span> từ <span>3 lượt đánh giá</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="product-price-num">8,500 đ</span>
+                        </div>
+
+                        <div class="product-desc-content">
+                            <p>
+                                <i class="fa-solid fa-check fa-bounce"></i>
+                                Xương có thể cho cún ăn hằng ngày vào các bữa chính hoặc bổ sung thêm ăn vặt vào các bữa phụ<br>
+                                <i class="fa-solid fa-check fa-bounce"></i>
+                                Giúp làm sạch răng, hạn chế mảng bám cao răng và giảm mùi hôi miệng<br>
+                                <i class="fa-solid fa-check fa-bounce"></i>
+                                Giúp ích cho thú cưng nhỏ mài răng hiệu quả<br>
+                                <i class="fa-solid fa-check fa-bounce"></i>
+                                Xương bàn chải có hàm lượng canxi cao, bổ sung canxi, giúp xương chắc khỏe cho mọi giống chó ở mọi độ tuổi<br>
+                                <i class="fa-solid fa-check fa-bounce"></i>
+                                Kích thích vị giác của cún giúp thú cưng ăn ngon miệng hơn
+                            </p>
+                        </div>
+
+                        <div class="product-box-addtocart">
+                            <div class="product-gr-quantity">
+                                <label>Số lượng</label>
+                                
+                                <div class="product-btn-add">
+                                    <button class="change">-</button>
+                                    <span class="number-of-product">1</span>
+                                    <button class="change">+</button>
+                                </div>
+
+                                <div class="number_product_now">0 sản phẩm có sẵn</div>
+                            </div>
+                            <div class="product-add-to-cart">
+                                <button class="btn-shopping"><i class="fa fa-cart-plus"></i> Thêm vào giỏ hàng</button>
+                                <button class="shop-now">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Chi tiết sản phẩm -->
+                <div class="details-product-content">
+                    <!-- Nội dung bên trái -->
+                    <div class="left-bar-content">
+                        <div class="content-title">
+                            Chi tiết sản phẩm
+                        </div>
+
+                        <p>Xương Gặm Bàn Chải Cho Chó Làm Sạch Răng Bổ Sung Canxi</p>
+
+                        <p>
+                            <i class="fa-solid fa-check fa-bounce"></i>
+                            Xương có thể cho cún ăn hằng ngày vào các bữa chính hoặc bổ sung thêm ăn vặt vào các bữa phụ<br>
+                            <i class="fa-solid fa-check fa-bounce"></i>
+                            Giúp làm sạch răng, hạn chế mảng bám cao răng và giảm mùi hôi miệng<br>
+                            <i class="fa-solid fa-check fa-bounce"></i>
+                            Giúp ích cho thú cưng nhỏ mài răng hiệu quả<br>
+                            <i class="fa-solid fa-check fa-bounce"></i>
+                            Xương bàn chải có hàm lượng canxi cao, bổ sung canxi, giúp xương chắc khỏe cho mọi giống chó ở mọi độ tuổi<br>
+                            <i class="fa-solid fa-check fa-bounce"></i>
+                            Kích thích vị giác của cún giúp thú cưng ăn ngon miệng hơn
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Dùng cho cún trên 6 tháng.<br>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Cún gặm trực tiếp, tiêu hóa bình thường.<br>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            HSD: 18 tháng<br>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Có 4 vị: Bò, Gà, Trà Xanh, Sữa canxi<br>
+                        </p>
+
+                        <div class="content-title">
+                            Đánh giá sản phẩm
+                        </div>
+
+                        <div class="rating-box">
+                            <div class="rating-box-content">
+                                <!-- Phần hộp số sao đánh giá -->
+                                <div class="rating-star">
+                                    <div class="list-star-gr">
+                                        <div class="list-star">
+                                            <i class='bx bxs-star' ></i>
+                                            <i class='bx bxs-star' ></i>
+                                            <i class='bx bxs-star' ></i>
+                                            <i class='bx bxs-star' ></i>
+                                            <i class='bx bxs-star-half' ></i>
+                                        </span>
+                                    </div>
+                                    <div class="result-rating">
+                                        <span class="result-rating">4.7</span> trên 5
+                                    </div>											
+                                </div>
+
+                                <ul class="list-rating-detail">
+                                    <li>1 sao<span>(0)</span></li>
+                                    <li>2 sao<span>(0)</span></li>
+                                    <li>3 sao<span>(0)</span></li>
+                                    <li>4 sao<span>(1)</span></li>
+                                    <li>5 sao<span>(2)</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="rating-star-show">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <!-- plugin facebook -->
+                            <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="2"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Nội dung bên phải -->  
+                <div class="right-bar-content">
+                        <div class="title-link">
+                            Sản phẩm liên quan
+                        </div>
+
+                        <img src="assets/images/products/2.jpg" alt="" style="width: 100%;">
+
+                        <span>Xúc Xích Siêu Rẻ Cho Chó Mèo Pet-1989</span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="footer-content">
+                <div class="footer-part">
+                    <div class="title">
+                        <h2>Về chúng tôi</h2>
+                    </div>
+
+                    <a href="#"><p>Giới thiệu</p></a>
+                    <a href="#"><p>Trung Tâm Trợ Giúp</p></a>
+                    <a href="#"><p>Tuyển dụng</p></a>
+                    <a href="#"><p>Hướng dẫn mua hàng</p></a>
+                    <a href="#"><p>Liên hệ</p></a>                    
+                </div>
+
+                <div class="footer-part">
+                    <div class="title">
+                        <h2>Chính sách của chúng tôi</h2>
+                    </div>
+
+                    <a href="#"><p>Chính Sách Bảo Hành</p></a>
+                    <a href="#"><p>Chính sách vận chuyển</p></a>
+                    <a href="#"><p>Chính sách bảo mật</p></a>
+                    <a href="#"><p>Chính sách đổi trả</p></a>
+                    <a href="#"><p>Chính sách đại lý</p></a>                    
+                </div>
+
+                <div class="footer-part">
+                    <div class="title">
+                        <h2>Thanh toán</h2>
+                    </div>
+
+                   <div class="pay-method">
+                    <img src="assets/images/payment-method/visa.png" alt="">
+                    <img src="assets/images/payment-method/ghn.jpg" alt="">
+                    <img src="assets/images/payment-method/jcb.png" alt="">
+                    <img src="assets/images/payment-method/mastercard.png" alt="">
+                    <img src="assets/images/payment-method/viettel.jpg" alt="">
+                   </div>             
+                </div>
+
+                <div class="footer-part">
+                    <div class="title">
+                        <h2>Mạng xã hội</h2>
+                    </div>
+
+                    <a href="#"><p>Facebook</p></a>
+                    <a href="#"><p>Instagram</p></a>
+                    <a href="#"><p>Youtube</p></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="bottom-footer">
+            <div class="bottom-content">
+                <div class="title">
+                    <h2>TMH shop</h2>
+                </div>
+
+                <div>
+                    <p>Địa chỉ: Lộc Thọ, Nha Trang, Khánh Hòa. Tổng đài hỗ trợ: 0123.456.789&nbsp;- Email: cskh@TMHshop.com.vn<br>
+                    Chịu Trách Nhiệm Quản Lý Nội Dung: TMH - Điện thoại liên hệ: 0123.456.789</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productImage = localStorage.getItem('selectedProductImage');
+            if (productImage) {
+                document.getElementById('productImage').src = productImage;
+            }
+        });
+    </script>
+</body>
+</html>

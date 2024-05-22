@@ -1,0 +1,221 @@
+
+/* Phan slider */
+#slider {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: 70% auto;
+    grid-gap: 5px;
+}
+
+#slider img{
+    width: 100%; 
+    height: auto; 
+}
+
+/* Phần List-imgs */
+ #list-imgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 10px;
+ }
+
+ #list-imgs .list-item > a {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+ }
+
+ #list-imgs .list-item a{
+    text-decoration: none;
+    color: inherit;
+ }
+
+#list-imgs .list-item img{
+    width: 45px;    
+    margin: auto;
+    float: none;
+}
+
+#list-imgs .list-item p{
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+#list-imgs .list-item img:hover {
+    transform: scale(1.2); /* Phong to 120%  */
+    transition: transform 0.3s ease; 
+}
+
+/* Phần  products-list*/
+
+#products-list{
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 0 10px #0000001a;
+}
+
+.products-list-type{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.products-list-type .product-item{
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.products-list-type .product-item img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    align-items: center;
+}
+
+.products-list-type .product-item p{
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.products-list-type .product-item:hover{
+    box-shadow: 0 0 10px #00000024;
+}
+
+/* Phần banner */
+#banner img{
+    width: 100%;
+}
+
+/* Phần products-container*/
+
+#products-container{
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 0 10px #0000001a;
+}
+
+#products-container .contain-products{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+#products-container .product-case img{
+    width: 100%;
+}
+
+#products-container .product-case .product-title{
+    width: 100%;   
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    margin: 10px 0;
+}
+
+#products-container .product-case .product-price, .rate-star{
+    color: #f53d2d;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#products-container .product-case .rate-star{
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    float: left;
+    width: 100%;
+    gap: 0;
+}
+
+.more-btn{
+    text-align: center;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.more-btn span{
+    background: linear-gradient(to bottom, #F43F2D, #FE6432);
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Phần about */
+
+.about-text{
+    text-align: justify;
+}
+
+.about-text p{
+    margin-bottom: 15px;
+}
+
+.about-text strong{
+    font-weight: 500;
+}
+
+/* Phần product catalog */
+
+.list-product-show{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .54);
+    font-weight: 700;
+    margin: 0 0 16px;
+    padding-bottom: 20px;
+}
+
+.list-product-show li a:hover{
+    color: #F43F2D;
+}
+
+/* responsive */
+
+/* tablet and mobile */
+@media only screen and (max-width: 63.8375em){
+    #list-imgs{
+        display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 10px;
+    }
+
+    #products-container .contain-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    #about {
+        padding: 0 10px;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .products-list-type {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* moblie */
+@media only screen and (max-width: 46.1875em){
+    .products-list-type {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

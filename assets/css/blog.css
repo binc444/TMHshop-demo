@@ -1,0 +1,144 @@
+#breadcrumb-nav {
+    font-size: 14px;
+    position: relative;
+    margin-top: 140px;
+    margin-bottom: 10px;
+}       
+
+.breadcrumb-nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breadcrumb-details{
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+#container-box{
+    margin-top: 0;
+}
+
+/*  */
+.main-site{
+    width: 100%;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 20% 79%;
+    gap: 10px;
+}
+
+.list-productcat-related i{
+    margin-bottom: 8px;
+}
+
+.list-productcat-related li:hover{
+    color: #f7442e;
+}
+
+.left-sidebar{
+    background: #fff;
+    padding: 15px;
+    width: 100%;
+}
+
+.title{
+    width: 100%;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+.title >h2{
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    letter-spacing: 0px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Phần blog */
+.blog-post{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+}
+
+.post-box img{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.post-box img:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.box-info >span{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.post-box-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #f7442e;
+}
+
+/* responsive */
+
+/* tablet and mobile */
+@media only screen and (max-width: 63.8375em){
+    #container-box, #breadcrumb-nav{
+        padding: 0 10px;
+    }
+
+    .main-site{
+        display: inline-block;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+
+} 
+
+/* moblie */
+@media only screen and (max-width: 46.1875em){
+    #breadcrumb-nav{
+        display: none;
+    }
+
+    #container-box{
+        margin-top: 140px;
+    }
+
+    .box-info{
+        font-size: 16px;
+    }
+
+    .post-box-title{
+        font-size: 16px;
+    }
+
+    .content-text p{
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        line-height: normal;
+        margin: auto;
+        overflow: hidden;
+    }
+}
