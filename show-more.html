@@ -648,5 +648,13 @@
             </div>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('.product-link').forEach(link => {
+    link.addEventListener('click', function(event) {
+        const imageUrl = this.getAttribute('data-image');
+        localStorage.setItem('selectedProductImage', imageUrl);
+        });
+    })
+    </script>
 </body>
 </html>
